@@ -18,7 +18,6 @@ nodejs:
       - workspace.json
       - devcontainer.json
       - .git
+      - .gitignore
   run:
-    init:
-      - usermod -s /bin/bash
     start: npm run start nodejs
