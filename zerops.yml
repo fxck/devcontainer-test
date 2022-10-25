@@ -4,6 +4,17 @@ nodejs:
     build:
       - npm i
       - npm run build nodejs
-    deploy: [.]
+    deploy:
+      - ./node_modules
+      - ./apps
+      - ./libs
+      - nx.json
+      - package.json
+      - package-lock.json
+      - tsconfig.base.json
+      - workspace.json
+      - devcontainer.json
+      - .git
+      - ./tools
   run:
     start: npm run start nodejs
