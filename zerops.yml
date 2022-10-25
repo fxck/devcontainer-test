@@ -19,4 +19,6 @@ nodejs:
       - devcontainer.json
       - .git
   run:
+    init:
+      - usermod -s /bin/bash
     start: npm run start nodejs
