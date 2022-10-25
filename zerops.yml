@@ -8,6 +8,8 @@ nodejs:
       - ./node_modules
       - ./apps
       - ./libs
+      . ./dist
+      - ./tools
       - nx.json
       - package.json
       - package-lock.json
@@ -15,6 +17,5 @@ nodejs:
       - workspace.json
       - devcontainer.json
       - .git
-      - ./tools
   run:
     start: npm run start nodejs
