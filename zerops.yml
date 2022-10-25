@@ -4,6 +4,7 @@ nodejs:
     build:
       - npm i
       - npm run build nodejs
+      - nx reset
     deploy:
       - ./node_modules
       - ./apps
