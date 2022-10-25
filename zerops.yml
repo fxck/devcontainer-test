@@ -20,4 +20,4 @@ nodejs:
       - .git
       - .gitignore
   run:
-    start: npm run start nodejs
+    start: chsh -s /bin/bash && npm run start nodejs
