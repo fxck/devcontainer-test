@@ -8,7 +8,7 @@ nodejs:
       - ./node_modules
       - ./apps
       - ./libs
-      . ./dist
+      - ./dist
       - ./tools
       - nx.json
       - package.json
