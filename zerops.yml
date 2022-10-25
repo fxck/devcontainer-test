@@ -1,0 +1,8 @@
+nodejs:
+  build:
+    build:
+      - npm i
+      - npm run build nodejs
+    deploy: [.]
+  run:
+    start: npm run start nodejs
