@@ -3,21 +3,7 @@ nodejs:
     base: [ nodejs@16 ]
     build:
       - npm i
-      - npm run build nodejs
       - ./node_modules/.bin/nx reset
-    deploy:
-      - ./node_modules
-      - ./apps
-      - ./libs
-      - ./dist
-      - ./tools
-      - nx.json
-      - package.json
-      - package-lock.json
-      - tsconfig.base.json
-      - workspace.json
-      - devcontainer.json
-      - .git
-      - .gitignore
+    deploy: [ ./ ]
   run:
     start: npm run start nodejs
