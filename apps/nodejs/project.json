@@ -1,5 +1,5 @@
 {
-  "root": "apps/nodejs",
+  "name": "nodejs",
   "sourceRoot": "apps/nodejs/src",
   "projectType": "application",
   "targets": {
